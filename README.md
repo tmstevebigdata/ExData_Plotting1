@@ -15,13 +15,14 @@ This readme file explains:-
 ### 1) Purpose
 
 ```
-The purpose of this project is to here is simply to examine how household energy usage varies
-over a 2-day period in February, 2007. The task is to reconstruct the following plots below,
-all of which were constructed using the base plotting system.
+The purpose of this project is to here is simply to examine how household energy usage
+varies over a 2-day period in February, 2007. The task is to reconstruct the following
+plots below, all of which were constructed using the base plotting system.
 
-This assignment uses data from the UC Irvine Machine Learning Repository, a popular repository
-for machine learning datasets. In particular, we will be using the “Individual household
-electric power consumption Data Set” which has been made available on the course web site.
+This assignment uses data from the UC Irvine Machine Learning Repository, a popular
+repository for machine learning datasets. In particular, we will be using the “Individual
+household electric power consumption Data Set” which has been made available on the course
+web site.
 
 First you will need to fork and clone the following GitHub repository:-
 https://github.com/rdpeng/ExData_Plotting1
