@@ -32,7 +32,10 @@ df_subset$Datetime <- as.POSIXct(POSIX_datetime)
 str(df_subset)
 
 ## Output plot to PNG
-png(filename = "plot2.png", width = 480, height = 480)
+FileName <- "plot2.png"
+if (file.exists(FileName)) {file.remove(FileName)}
+
+png(filename = FileName, height = 480, width = 480)
 plot(df_subset$Global_active_power ~ df_subset$Datetime,
      type = "l",
      xlab = "",

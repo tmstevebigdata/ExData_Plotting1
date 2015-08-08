@@ -29,9 +29,12 @@ df_subset$Global_active_power <- as.numeric(df_subset$Global_active_power)
 str(df_subset)
 
 ## Output plot to PNG
-png(filename = "plot1.png", width = 480, height = 480)
+FileName <- "plot1.png"
+if (file.exists(FileName)) {file.remove(FileName)}
+
+png(filename = FileName, height = 480, width = 480)
 hist(df_subset$Global_active_power,
      col = "red",
-     xlab = "Global Active Power (kilowatts)",
-     main = "Global Active Power")
+     main = "Global Active Power",
+     xlab = "Global Active Power (kilowatts)")
 dev.off()
