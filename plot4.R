@@ -43,7 +43,7 @@ with(df_subset, {
      plot(Voltage ~ Datetime,
           type = "l",
           xlab = "datetime",
-          ylab = "Voltage (volt)")
+          ylab = "Voltage")
 
      plot(Sub_metering_1 ~ Datetime,
           type = "l",
@@ -55,11 +55,11 @@ with(df_subset, {
                   lty = 1,
                   lwd = 2,
                   bty = "n",
-                  legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.75)
+                  legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 1)
 
      plot(Global_reactive_power ~ Datetime,
           type = "l",
           xlab = "datetime",
-          ylab = "Global_Reactive_Power")
+          ylab = "Global_reactive_power")
 })
 dev.off()
