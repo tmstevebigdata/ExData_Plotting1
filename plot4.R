@@ -24,6 +24,7 @@ rm(df)
 
 ## Convert data to numeric
 df_subset$Global_active_power <- as.numeric(df_subset$Global_active_power)
+df_subset$Global_reactive_power <- as.numeric(df_subset$Global_reactive_power)
 
 ## Display the structure of the data subset
 str(df_subset)
